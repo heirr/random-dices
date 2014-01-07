@@ -8,6 +8,7 @@
 
 #import "telaInicialViewController.h"
 #import "numerosRandomViewController.h"
+#import "nomesRandomViewController.h"
 
 @interface telaInicialViewController ()
 
@@ -18,6 +19,11 @@
 -(IBAction)abrirNumerosRandom {
     numerosRandomViewController *numerosRandom = [[numerosRandomViewController alloc] init];
     [self.navigationController pushViewController:numerosRandom animated:YES];
+}
+
+-(IBAction)abrirNomesRandom {
+    nomesRandomViewController *nomesRandom = [[nomesRandomViewController alloc] init];
+    [self.navigationController pushViewController:nomesRandom animated:YES];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

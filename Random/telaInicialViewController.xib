@@ -20,6 +20,9 @@
                     <state key="normal" title="Nomes Aleatórios">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="abrirNomesRandom" destination="-1" eventType="touchUpInside" id="o1Z-v5-PXs"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSD-Oh-5gT">
                     <rect key="frame" x="93" y="232" width="135" height="30"/>

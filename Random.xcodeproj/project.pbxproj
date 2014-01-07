@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2851B6F0187C50B600308014 /* nomesRandomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2851B6EE187C50B600308014 /* nomesRandomViewController.m */; };
+		2851B6F1187C50B600308014 /* nomesRandomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2851B6EF187C50B600308014 /* nomesRandomViewController.xib */; };
 		289890EA187648510003CCAD /* numerosRandomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289890E8187648510003CCAD /* numerosRandomViewController.m */; };
 		289890EB187648510003CCAD /* numerosRandomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289890E9187648510003CCAD /* numerosRandomViewController.xib */; };
 		289890EE1877838F0003CCAD /* objetoSorteado.m in Sources */ = {isa = PBXBuildFile; fileRef = 289890ED1877838F0003CCAD /* objetoSorteado.m */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2851B6ED187C50B600308014 /* nomesRandomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nomesRandomViewController.h; sourceTree = "<group>"; };
+		2851B6EE187C50B600308014 /* nomesRandomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nomesRandomViewController.m; sourceTree = "<group>"; };
+		2851B6EF187C50B600308014 /* nomesRandomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nomesRandomViewController.xib; sourceTree = "<group>"; };
 		289890E7187648510003CCAD /* numerosRandomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numerosRandomViewController.h; sourceTree = "<group>"; };
 		289890E8187648510003CCAD /* numerosRandomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = numerosRandomViewController.m; sourceTree = "<group>"; };
 		289890E9187648510003CCAD /* numerosRandomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = numerosRandomViewController.xib; sourceTree = "<group>"; };
@@ -132,6 +137,9 @@
 				289890E9187648510003CCAD /* numerosRandomViewController.xib */,
 				289890EC1877838F0003CCAD /* objetoSorteado.h */,
 				289890ED1877838F0003CCAD /* objetoSorteado.m */,
+				2851B6ED187C50B600308014 /* nomesRandomViewController.h */,
+				2851B6EE187C50B600308014 /* nomesRandomViewController.m */,
+				2851B6EF187C50B600308014 /* nomesRandomViewController.xib */,
 			);
 			path = Random;
 			sourceTree = "<group>";
@@ -245,6 +253,7 @@
 			files = (
 				28AE487318762C90004B502E /* InfoPlist.strings in Resources */,
 				289890EB187648510003CCAD /* numerosRandomViewController.xib in Resources */,
+				2851B6F1187C50B600308014 /* nomesRandomViewController.xib in Resources */,
 				28AE487B18762C90004B502E /* Images.xcassets in Resources */,
 				28AE489B18762F9C004B502E /* telaInicialViewController.xib in Resources */,
 			);
@@ -265,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2851B6F0187C50B600308014 /* nomesRandomViewController.m in Sources */,
 				28AE489A18762F9C004B502E /* telaInicialViewController.m in Sources */,
 				289890EE1877838F0003CCAD /* objetoSorteado.m in Sources */,
 				289890EA187648510003CCAD /* numerosRandomViewController.m in Sources */,

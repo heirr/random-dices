@@ -1,48 +1,43 @@
 //
-//  numerosRandomViewController.m
+//  nomesRandomViewController.m
 //  Random
 //
-//  Created by Helber Weslley Catarina on 02/01/14.
+//  Created by Helber Weslley Catarina on 07/01/14.
 //  Copyright (c) 2014 Helber Weslley Catarina. All rights reserved.
 //
 
-#import "numerosRandomViewController.h"
+#import "nomesRandomViewController.h"
 #import "objetoSorteado.h"
 
-@interface numerosRandomViewController ()
+@interface nomesRandomViewController ()
 
 @end
 
-@implementation numerosRandomViewController
+@implementation nomesRandomViewController
+@synthesize tf_nome,tableView;
 
-@synthesize intervaloFinal, intervaloInicial, tableView;
-
-- (IBAction)numeroAleatorio {
-    [intervaloFinal resignFirstResponder];
-    quantosSorteados++;
-    int final = [intervaloFinal.text intValue];
-    int inicial = [intervaloInicial.text intValue];
-    int teste = (arc4random() % (final - inicial) + inicial) ;
-    
-    NSString *strName = [NSString stringWithFormat:@"%d", teste];
-    NSString *strDesc = [NSString stringWithFormat:@"%d", quantosSorteados];
-    
-    objetoSorteado *obj = [[objetoSorteado alloc] initWithName:strName description:strDesc];
-    
-    [numerosSorteados addObject:obj];
-    [tableView reloadData];
-    
-    // NSString *str = [NSString stringWithFormat:@"%d", teste];
-    //[label setText:[NSString stringWithFormat:@"%d", arc4random() % 10 + 1]];
-    //label.text = str;
+-(IBAction)addNome {
+    [tf_nome resignFirstResponder];
+    NSString *nome = tf_nome.text;
+    objetoSorteado *obj = [[objetoSorteado alloc] initWithName:nome description:nil];
+    [nomesAdicionados addObject:obj];
+    quantosAdicionados++;
 }
 
--(IBAction)backgroundTap:(id)sender {
-    [intervaloInicial resignFirstResponder];
+-(IBAction)verNomes {
+    
+}
+
+-(IBAction)sortear {
+    int numRandom = (arc4random() % nomesAdicionados.count);
+    objetoSorteado *obj = [nomesAdicionados objectAtIndex:numRandom];
+    [nomesSorteados addObject:obj];
+    [tableView reloadData];
+    
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return numerosSorteados.count;
+    return nomesSorteados.count;
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -60,7 +55,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
     }
     
-    objetoSorteado *obj = [numerosSorteados objectAtIndex:[indexPath row]];
+    objetoSorteado *obj = [nomesSorteados objectAtIndex:[indexPath row]];
     cell.textLabel.text = [obj name];
     cell.detailTextLabel.text = [obj description];
     
@@ -69,6 +64,7 @@
     
     return cell;
 }
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -83,9 +79,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Números Aleatórios";
-    numerosSorteados = [[NSMutableArray alloc] init];
-    quantosSorteados = 0;
+    quantosAdicionados = 0;
+    nomesSorteados = [[NSMutableArray alloc] init];
+    nomesAdicionados = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
