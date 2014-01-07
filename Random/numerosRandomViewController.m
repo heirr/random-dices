@@ -22,7 +22,7 @@
     quantosSorteados++;
     int final = [intervaloFinal.text intValue];
     int inicial = [intervaloInicial.text intValue];
-    int teste = (arc4random() % (final - inicial) + inicial) ;
+    int teste = (arc4random() % (final + 1 - inicial) + inicial) ;
     
     NSString *strName = [NSString stringWithFormat:@"%d", teste];
     NSString *strDesc = [NSString stringWithFormat:@"%d", quantosSorteados];
