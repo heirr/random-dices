@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		289890EA187648510003CCAD /* numerosRandomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289890E8187648510003CCAD /* numerosRandomViewController.m */; };
+		289890EB187648510003CCAD /* numerosRandomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289890E9187648510003CCAD /* numerosRandomViewController.xib */; };
+		289890EE1877838F0003CCAD /* objetoSorteado.m in Sources */ = {isa = PBXBuildFile; fileRef = 289890ED1877838F0003CCAD /* objetoSorteado.m */; };
 		28AE486918762C90004B502E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AE486818762C90004B502E /* Foundation.framework */; };
 		28AE486B18762C90004B502E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AE486A18762C90004B502E /* CoreGraphics.framework */; };
 		28AE486D18762C90004B502E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AE486C18762C90004B502E /* UIKit.framework */; };
@@ -19,6 +22,8 @@
 		28AE488418762C91004B502E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AE486C18762C90004B502E /* UIKit.framework */; };
 		28AE488C18762C91004B502E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28AE488A18762C91004B502E /* InfoPlist.strings */; };
 		28AE488E18762C91004B502E /* RandomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AE488D18762C91004B502E /* RandomTests.m */; };
+		28AE489A18762F9C004B502E /* telaInicialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AE489818762F9C004B502E /* telaInicialViewController.m */; };
+		28AE489B18762F9C004B502E /* telaInicialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AE489918762F9C004B502E /* telaInicialViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		289890E7187648510003CCAD /* numerosRandomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numerosRandomViewController.h; sourceTree = "<group>"; };
+		289890E8187648510003CCAD /* numerosRandomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = numerosRandomViewController.m; sourceTree = "<group>"; };
+		289890E9187648510003CCAD /* numerosRandomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = numerosRandomViewController.xib; sourceTree = "<group>"; };
+		289890EC1877838F0003CCAD /* objetoSorteado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objetoSorteado.h; sourceTree = "<group>"; };
+		289890ED1877838F0003CCAD /* objetoSorteado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = objetoSorteado.m; sourceTree = "<group>"; };
 		28AE486518762C90004B502E /* Random.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Random.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AE486818762C90004B502E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28AE486A18762C90004B502E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +58,9 @@
 		28AE488918762C91004B502E /* RandomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RandomTests-Info.plist"; sourceTree = "<group>"; };
 		28AE488B18762C91004B502E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28AE488D18762C91004B502E /* RandomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomTests.m; sourceTree = "<group>"; };
+		28AE489718762F9C004B502E /* telaInicialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = telaInicialViewController.h; sourceTree = "<group>"; };
+		28AE489818762F9C004B502E /* telaInicialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = telaInicialViewController.m; sourceTree = "<group>"; };
+		28AE489918762F9C004B502E /* telaInicialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = telaInicialViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +124,14 @@
 				28AE487818762C90004B502E /* AppDelegate.m */,
 				28AE487A18762C90004B502E /* Images.xcassets */,
 				28AE486F18762C90004B502E /* Supporting Files */,
+				28AE489718762F9C004B502E /* telaInicialViewController.h */,
+				28AE489818762F9C004B502E /* telaInicialViewController.m */,
+				28AE489918762F9C004B502E /* telaInicialViewController.xib */,
+				289890E7187648510003CCAD /* numerosRandomViewController.h */,
+				289890E8187648510003CCAD /* numerosRandomViewController.m */,
+				289890E9187648510003CCAD /* numerosRandomViewController.xib */,
+				289890EC1877838F0003CCAD /* objetoSorteado.h */,
+				289890ED1877838F0003CCAD /* objetoSorteado.m */,
 			);
 			path = Random;
 			sourceTree = "<group>";
@@ -191,6 +212,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Helber Weslley Catarina";
 				TargetAttributes = {
+					28AE486418762C90004B502E = {
+						DevelopmentTeam = 256D52FNC7;
+					};
 					28AE487F18762C91004B502E = {
 						TestTargetID = 28AE486418762C90004B502E;
 					};
@@ -220,7 +244,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AE487318762C90004B502E /* InfoPlist.strings in Resources */,
+				289890EB187648510003CCAD /* numerosRandomViewController.xib in Resources */,
 				28AE487B18762C90004B502E /* Images.xcassets in Resources */,
+				28AE489B18762F9C004B502E /* telaInicialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AE489A18762F9C004B502E /* telaInicialViewController.m in Sources */,
+				289890EE1877838F0003CCAD /* objetoSorteado.m in Sources */,
+				289890EA187648510003CCAD /* numerosRandomViewController.m in Sources */,
 				28AE487918762C90004B502E /* AppDelegate.m in Sources */,
 				28AE487518762C90004B502E /* main.m in Sources */,
 			);
@@ -359,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Random/Random-Prefix.pch";
 				INFOPLIST_FILE = "Random/Random-Info.plist";
@@ -372,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Random/Random-Prefix.pch";
 				INFOPLIST_FILE = "Random/Random-Info.plist";
@@ -441,6 +472,7 @@
 				28AE489318762C91004B502E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28AE489418762C91004B502E /* Build configuration list for PBXNativeTarget "RandomTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +481,7 @@
 				28AE489618762C91004B502E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
