@@ -13,6 +13,6 @@
 }
 
 -(IBAction)abrirNumerosRandom;
--(IBAction)abrirNomesRandom;
+//-(IBAction)abrirNomesRandom;
 
 @end
